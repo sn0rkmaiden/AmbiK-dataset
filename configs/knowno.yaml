@@ -13,9 +13,9 @@ experiment:
             #num_return_sequences: 1
 
     answering:
-        model: "gpt3.5-turbo"
+        model: "google/flan-t5-base"
         #"NousResearch/Llama-2-7b-chat-hf"
-        #"google/flan-t5-base"
+        #"gpt3.5-turbo"        
         generation_kwargs:
             max_tokens: 1
             logprobs: True
