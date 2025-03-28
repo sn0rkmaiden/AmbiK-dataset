@@ -11,7 +11,6 @@ class TimeoutException(Exception):
     pass
 
 #openai_api_key = "your-api-key"
-openai.api_key = openai_api_key
 
 class timeout:
     def __init__(self, seconds=1, error_message='Timeout'):
@@ -269,11 +268,11 @@ class LLM:
         filtered_logits = torch.stack([logit[mask[i]] for i, logit in enumerate(logits)])
         return filtered_logits
 
-if __name__ == "__main__":
-    model = LLM("google/flan-t5-large", {"max_length": 50, "num_return_sequences": 1})
-    print(model.generate("Choose one letter A/B/C?"))
-    answer, logits = model.generate("Choose one letter A/B/C?", return_logits=True)
-    print(model.filter_logits(logits[0][1], words=["A", "B", "C", "D", 'a', 'b', 'c', 'd', '1', '2', '3', '4']))
+# if __name__ == "__main__":
+#     model = LLM("google/flan-t5-large", {"max_length": 50, "num_return_sequences": 1})
+#     print(model.generate("Choose one letter A/B/C?"))
+#     answer, logits = model.generate("Choose one letter A/B/C?", return_logits=True)
+#     print(model.filter_logits(logits[0][1], words=["A", "B", "C", "D", 'a', 'b', 'c', 'd', '1', '2', '3', '4']))
 
 
 
