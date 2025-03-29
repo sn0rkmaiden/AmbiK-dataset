@@ -54,11 +54,10 @@ class LLM:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
             self.model = GemmaForCausalLM.from_pretrained(model_name)
             self.mtype ='ed'
-        elif 'turbo' or 'gpt-4' in model_name:
-            self.model = model_name
-            self.mtype = 'gpt_api'
-            self.client = OpenAI(api_key=openai_api_key)
-   # base_url='https://api.proxyapi.ru/openai/v1',
+        # elif 'turbo' or 'gpt-4' in model_name:
+        #     self.model = model_name
+        #     self.mtype = 'gpt_api'
+        #     self.client = OpenAI(api_key=openai_api_key)        
 
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
