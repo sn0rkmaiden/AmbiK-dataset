@@ -10,7 +10,7 @@ import threading
 class TimeoutException(Exception):
     pass
 
-#openai_api_key = "your-api-key"
+openai_api_key = "your-api-key"
 
 class timeout:
     def __init__(self, seconds=1, error_message='Timeout'):
@@ -58,7 +58,6 @@ class LLM:
         #     self.model = model_name
         #     self.mtype = 'gpt_api'
         #     self.client = OpenAI(api_key=openai_api_key)        
-
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
             self.model = AutoModelForCausalLM.from_pretrained(model_name)
