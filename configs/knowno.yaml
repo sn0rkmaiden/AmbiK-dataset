@@ -1,6 +1,7 @@
 experiment: 
     examples_generation:
-        model: "NousResearch/Llama-2-7b-chat-hf"
+        model: "google/flan-t5-base"
+        # "NousResearch/Llama-2-7b-chat-hf"
         # "gpt-3.5-turbo"        
         #"google/gemma-7b"
         generation_kwargs:
@@ -13,8 +14,8 @@ experiment:
             num_return_sequences: 1
 
     answering:
-        model: "NousResearch/Llama-2-7b-chat-hf"
-        # "google/flan-t5-base"        
+        model: "google/flan-t5-base"
+        # "NousResearch/Llama-2-7b-chat-hf"        
         #"gpt3.5-turbo"        
         generation_kwargs:
             # max_tokens: 1
