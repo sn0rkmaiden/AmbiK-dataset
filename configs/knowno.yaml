@@ -1,6 +1,6 @@
 experiment: 
     examples_generation:
-        model: "google/gemma-2-2b"
+        model: "google/gemma-2b"
         # "google/gemma-7b"
         # "mistralai/Mistral-7B-Instruct-v0.1"
         # "NousResearch/Llama-2-7b-chat-hf"
