@@ -1,6 +1,6 @@
 experiment: 
     examples_generation:
-        model: "google/flan-t5-base"
+        model: "mistralai/Mistral-7B-Instruct-v0.1"
         # "NousResearch/Llama-2-7b-chat-hf"
         # "gpt-3.5-turbo"        
         #"google/gemma-7b"
