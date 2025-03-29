@@ -2,8 +2,8 @@ import numpy as np
 from collections import Counter
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModelForSeq2SeqLM, GemmaForCausalLM
 import torch
-import openai
-from openai import OpenAI
+# import openai
+# from openai import OpenAI
 import signal
 import threading
 
